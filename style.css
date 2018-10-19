@@ -1,0 +1,241 @@
+/*
+Theme 	     :  Business Website
+Theme URI    :  www.example.com
+Author 		   :  Tanvir Rahman
+Author URI   :  www.example.com
+Version 	   :  1.0
+Description  :
+*/
+
+
+
+
+/*
+--------------------
+INDEX
+--------------------
+1. HEADER
+2.BANNER
+3.About4.SERVICE
+*/
+
+
+
+/* =====
+HEADER
+========*/
+header .menus{
+  margin-left: 10px!important;
+  margin-right: 10px!important;
+  border-bottom: 3px solid transparent;
+  transition: .3s;
+  text-transform: uppercase;
+}
+
+header .menus:hover{
+  border-bottom: 3px solid #F1C40F;
+}
+
+@media only screen and (max-width:992px){
+  .navbar-menu-box{
+    background-color: rgba(0, 0, 0, 0.9)!important;
+    text-align: center;
+  }
+}
+
+
+@media only screen and (max-width:768px) {
+
+  header .menus{
+    border-bottom: 3px solid transparent!important;
+  }
+
+}
+
+
+
+
+/* =====
+BANNER
+========*/
+.banner{
+  background-image: url(img/bg1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+
+.banner:before{
+  position: absolute;
+  content: "";
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.banner .banner-data{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50% , -50%);
+  text-align: center;
+    color: #fff;
+}
+
+
+.banner .banner-data h1{
+
+  font-family: font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+
+}
+
+.banner .banner-data h1 span{
+  color:#F1C40F;
+}
+
+
+.banner .banner-data p{
+  max-width: 500px;
+  margin: 10px auto;
+
+}
+
+
+
+.banner .banner-data h3{
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+}
+
+.banner .banner-data h3 span{
+  color:#F1C40F;
+}
+
+
+
+
+@media screen and (max-width:768px) {
+   .banner .banner-data h1{
+     font-size: 42px;
+   }
+
+   .banner .banner-data p{
+     font-size: 15px;
+   }
+
+   .banner .banner-data h3{
+     font-size: 27px;
+   }
+
+}
+
+
+@media screen and (max-width:480px){
+  .banner .banner-data h1{
+    font-size: 25px;
+  }
+
+  .banner .banner-data p{
+  display: none;
+  }
+
+  .banner .banner-data h3{
+    font-size: 14px;
+  }
+}
+/* BANNER SECTION END FROM HERE */
+
+
+
+/* =====
+3.ABOUT
+========*/
+.about{
+  padding: 100px 0px;
+}
+
+.about h1{
+  font-size: 35px!important;
+  text-align: center;
+  width:250px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  border-left: 3px solid #F1C40F;
+  border-right: 3px solid #F1C40F;
+  margin-bottom: 100px;
+}
+
+
+.about p{
+  font-family: 'Poppins', sans-serif;
+
+}
+
+
+@media screen and (max-width:992px) {
+  .about p{
+    font-size: 15px;
+
+  }
+}
+
+
+/* ABOUT SECTION END FROM HERE */
+
+
+
+
+/* =====
+4.SERVICE
+========*/
+.service{
+  background-color: #F8F9FA;
+  padding: 100px 0px;
+}
+
+
+.service h1{
+  font-size: 35px!important;
+  text-align: center;
+  width:250px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  border-left: 3px solid #F1C40F;
+  border-right: 3px solid #F1C40F;
+  margin-bottom: 100px;
+}
+
+
+
+.service .item{
+  padding: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+  margin:10px 10px;
+  text-align: center;
+}
+
+.service .item:hover i{
+  color:#F1C40F;
+}
+
+.service .item i{
+  font-size: 50px;
+transition: .3s;
+}
+
+
+.service .item p{
+
+  max-width: 330px;
+  margin: 0 auto;
+  padding: 20px 0px;
+}
